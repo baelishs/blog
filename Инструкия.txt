@@ -1,0 +1,18 @@
+Для запуска проекта нужно будет использовать:
+
+docker-compose up -d
+
+
+FAQ:
+На каких портах все будет происходить?
+localhost:8000 - твой проект
+localhost:8001 -> phpmyadmin
+
+PHPMYADMIN ACCES:
+host: db
+login: root
+password: root
+
+!!!!!!!!!!!!!!!!!! ВАЖНО !!!!!!!!!
+Когда ты начинаешь новый проект то перед тем как прописать docker-compose up -d
+пропиши docker rm -f $(docker ps -qa) 
